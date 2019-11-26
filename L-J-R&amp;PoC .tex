@@ -1,4 +1,9 @@
 \documentclass{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\geometry{a4paper, left=15mm, right=15mm, top=25mm, bottom=25mm}
 \usepackage[utf8]{inputenc}
 
 \title{Learning Journal R \& PoC}
@@ -70,7 +75,6 @@ Continuing 5 NOV 2019
 
 \begin{itemize}
     \item When mixing vector types into a single vector, R implicitly converts them into a single type. When I made a vector with three numeric types and one character type, the typeof function output the type as character. This means R converted the three numeric arguments into character types.
-    \item 
 \end{itemize}
 
 \section{Learning Journal for new PoC}
@@ -148,6 +152,14 @@ Continuing 5 NOV 2019
     
     \item Outcome: Writing it in md format was better from an aesthetic standpoint compared to plain text. It is easier to see the sections and the ability to hyperlink makes it that much easier for the person viewing the document.
 
+\end{itemize}
+
+\subsection{26 NOV 2019}
+
+\begin{itemize}
+    \item Intention: Write in a txt file in such a way that I can create docx comments when I convert the txt file to docx.
+    \item Action: After creating a txt file from a docx file using Pandoc so that comments were retained, I copied the entire chuck of text which contained the information of one comment/in-body text portion from the docx. I then modified the copied section by editing the time stamp as well as editing the text in the `comment' section and the in-body section. I then used Pandoc to convert this edited txt file to docx with all changes tracked.
+    \item Outcome: A success! The new docx file had the new sentence and comment with the new timestamp. See \href{https://github.com/MQ-FOAR705/Version-Control-Supervisor-Feedback-PoC/blob/master/aa/Contents.md}{this} document to see the screenshots of the process. 
 \end{itemize}
 
 
